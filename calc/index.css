@@ -1,0 +1,42 @@
+.main{
+ 
+    padding: 20px;
+    border: 10%;
+    height: 100%;
+   
+
+}
+.m1{
+  
+    border: 1px solid #007acc;
+    height: 45%;
+    width: 18%;
+    margin-left: 25%;
+    border-radius: 2cap;
+    padding: 10px;
+    margin-top: 20px;
+    justify-content: center;
+ 
+}
+#display{
+  
+    border: 10%;
+    height: 10%;
+    width: 80%;
+    border-style: double;
+   margin-left: 10%;
+   
+
+
+}
+.button-c{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.button{
+    width: 60px;
+    height: 45px;
+    margin: 5px;
+  
+}

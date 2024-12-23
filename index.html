@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <button class="add" onclick="count++ 
+    document.querySelector('#frst').textContent = `your cart has ${count} items`;">add item</button>
+    
+    <button class="whislist" onclick="if(count>0) count--;
+    document.querySelector('#frst').textContent = `your cart has ${count} items`;"> whislist button</button>
+    <button class="add1" onclick="count+=2
+    document.querySelector('#frst').textContent = `your cart has ${count} items`;">add item 1+1</button>
+<h1 id="frst"></h1>
+    
+
+<script>
+   let count=0;
+    document.querySelector('#frst').textContent = `your cart has ${count} items`;
+</script>
+</body>
+
+</html>

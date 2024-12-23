@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="m1">
+            <div>
+         <input type="text" id="display" readonly>  
+         <!-- readonly isly kiye taki input wale field me jise ham click krke likh skte the na ab nhi likh pinge -->
+        </div>
+       
+         <div class="button-c">
+            <button class="button" onclick=" cc='';//string define kr liye   and ye na c click krne pe empty ona chaoye isliye empty string 
+     document.querySelector('#display').value=cc;">C</button>
+            <button class="button" onclick="cc=cc+'1';//string define kr liye   and ye na c click krne pe empty ona chaoye isliye empty string 
+     document.querySelector('#display').value=cc">1</button>
+            <button class="button" onclick="cc=cc+'2';//string define kr liye   and ye na c click krne pe empty ona chaoye isliye empty string 
+     document.querySelector('#display').value=cc">2</button>
+            <button class="button" onclick="cc=cc+'+';//string define kr liye   and ye na c click krne pe empty ona chaoye isliye empty string 
+     document.querySelector('#display').value=cc">+</button>
+            <button class="button" onclick="cc=cc+'3';//string define kr liye   and ye na c click krne pe empty ona chaoye isliye empty string 
+     document.querySelector('#display').value=cc">3</button>
+            <button class="button" onclick="cc=cc+'4';//string define kr liye   and ye na c click krne pe empty ona chaoye isliye empty string 
+     document.querySelector('#display').value=cc">4</button>
+            <button class="button" onclick="cc=cc+'-';//string define kr liye   and ye na c click krne pe empty ona chaoye isliye empty string 
+     document.querySelector('#display').value=cc">-</button>
+            <button class="button" onclick="cc=cc+'5';//string define kr liye   and ye na c click krne pe empty ona chaoye isliye empty string 
+     document.querySelector('#display').value=cc">5</button>
+            <button class="button" onclick="cc=cc+'6';//string define kr liye   and ye na c click krne pe empty ona chaoye isliye empty string 
+     document.querySelector('#display').value=cc">6</button>
+            <button class="button" onclick="cc=cc+'*';//string define kr liye   and ye na c click krne pe empty ona chaoye isliye empty string 
+     document.querySelector('#display').value=cc">*</button>
+            <button class="button" onclick="cc=cc+'7';//string define kr liye   and ye na c click krne pe empty ona chaoye isliye empty string 
+     document.querySelector('#display').value=cc">7</button>
+            <button class="button" onclick="cc=cc+'8';//string define kr liye   and ye na c click krne pe empty ona chaoye isliye empty string 
+     document.querySelector('#display').value=cc">8</button>
+            <button class="button" onclick="cc=cc+'/';//string define kr liye   and ye na c click krne pe empty ona chaoye isliye empty string 
+     document.querySelector('#display').value=cc">/</button>
+            <button class="button" onclick=" let res=0;
+            res=eval(cc);//eval jo v is cc string me hai usko evaluate kr dega te
+     document.querySelector('#display').value=res">=</button>
+            <button class="button" onclick="cc=cc+'9';//string define kr liye   and ye na c click krne pe empty ona chaoye isliye empty string 
+     document.querySelector('#display').value=cc">9</button>
+            <button class="button" onclick="cc=cc+'0';//string define kr liye   and ye na c click krne pe empty ona chaoye isliye empty string 
+     document.querySelector('#display').value=cc">0</button>
+            <button class="button" onclick="cc=cc+'.';//string define kr liye   and ye na c click krne pe empty ona chaoye isliye empty string 
+     document.querySelector('#display').value=cc">.</button>
+
+        </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        // yha na input text na open hai tag hai to query selector me ye .innertext nhi hga blki .value hoga yha pe 
+
+// In the case of an input field, .innerText does not work, because input elements do not contain text nodes as their children; instead, their value is stored in the value property. You should use .value to set or get the text in an input field.
+
+// If you're dealing with other elements, like <div> or <p>, you can use .innerText to change their content. Here's an example:
+
+     let cc='';//string define kr liye
+     document.querySelector('#display').value=cc;
+    </script>
+</body>
+</html>
